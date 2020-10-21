@@ -47,9 +47,7 @@ def get_jobs(job_name, num_jobs, debugging):
 
         try:
             driver.find_element_by_class_name('modal_closeIcon').click() #clicking to the X.
-            print('111111')
         except NoSuchElementException:
-            print('2222222')
             pass
 
         
