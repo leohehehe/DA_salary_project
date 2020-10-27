@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[35]:
+# In[74]:
 
 
 from selenium.common.exceptions import NoSuchElementException, ElementClickInterceptedException
@@ -10,7 +10,7 @@ import time
 import pandas as pd
 
 
-# In[36]:
+# In[86]:
 
 
 def get_jobs(job_name, num_jobs, debugging):
@@ -27,7 +27,7 @@ def get_jobs(job_name, num_jobs, debugging):
     driver = webdriver.Chrome(executable_path="/Users/leo/Desktop/DATA /ds_job_salary/chromedriver", options=options)
     driver.set_window_size(1120, 1000)
 
-    url = 'http://www.glassdoor.com/Job/jobs.htm?suggestCount=0&suggestChosen=false&clickSource=searchBtn&typedKeyword='+job_name+'&sc.keyword='+job_name+'&locT=C&locId=1132348&jobType='
+    url = 'https://www.glassdoor.com/Job/jobs.htm?suggestCount=0&suggestChosen=false&clickSource=searchBtn&typedKeyword='+job_name+'&sc.keyword='+job_name+'&locT=&locId=&jobType='
     driver.get(url)
     jobs = []
 
@@ -59,8 +59,11 @@ def get_jobs(job_name, num_jobs, debugging):
             if len(jobs) >= num_jobs:
                 break
 
-            job_button.click()  #You might 
-            time.sleep(1)
+            try:
+                job_button.click()
+            except:
+                continue
+            
             collected_successfully = False
             
             while not collected_successfully:
@@ -74,9 +77,9 @@ def get_jobs(job_name, num_jobs, debugging):
                     time.sleep(5)
 
             try:
-                salary_estimate = driver.find_element_by_xpath('.//span[@class="css-1uyte9r css-hca4ks e1wijj242"]').text
+                salary_estimate = driver.find_element_by_xpath('.//div[@class="salary"]').text
             except NoSuchElementException:
-                continue 
+                salary_estimate = -1 
             
             try:
                 rating = driver.find_element_by_xpath('.//span[@class="rating"]').text
@@ -190,16 +193,21 @@ def get_jobs(job_name, num_jobs, debugging):
     return pd.DataFrame(jobs)  #This line converts the dictionary object into a pandas DataFrame.
 
 
-# In[33]:
+# In[93]:
 
 
 #This line will open a new chrome window and start the scraping.
-#df = get_jobs("data analyst", 10, False)
-#df
+#df = get_jobs("data analyst", 1500, False)
 
 
-# In[34]:
+# In[94]:
 
 
-df.head()
+#df.info()
+
+
+# In[102]:
+
+
+#df.to_csv('DA_job_dataset.csv')
 
