@@ -13,9 +13,9 @@ AWS, and R
 # Resouces and Code
 
 
-Python Version: 3.7.9
-Jupyter Notebook Version: 6.1.4
-Packages: pandas, numpy, sklearn, matplotlib, seaborn, selenium, flask, pickle
+Python Version: 3.7.9 <br />
+Jupyter Notebook Version: 6.1.4 <br />
+Packages: pandas, numpy, sklearn, matplotlib, seaborn, selenium, flask, pickle <br />
 Scraper Article: https://towardsdatascience.com/selenium-tutorial-scraping-glassdoor-com-in-10-minutes-3d0915c6d905
 
 
@@ -25,17 +25,17 @@ Scraper Article: https://towardsdatascience.com/selenium-tutorial-scraping-glass
 
 Inspired by the scaper article above, I tweaked the github repo to scrape 1500 job posts from GlassDoor.com. With each job post, I got the following features:
 
-· Job Title
-· Salary Estimate
-· Job Description
-· Rating
-· Company Name
-· Location
-· Company Size
-· Founded Year
-· Type of Ownership 
-· Industry
-· Sector
+· Job Title<br />
+· Salary Estimate<br />
+· Job Description<br />
+· Rating<br />
+· Company Name<br />
+· Location<br />
+· Company Size<br />
+· Founded Year<br />
+· Type of Ownership <br />
+· Industry<br />
+· Sector<br />
 · Revenue
 
 
@@ -43,25 +43,26 @@ Inspired by the scaper article above, I tweaked the github repo to scrape 1500 j
 # Data Cleaning 
 
 
-Before EDA and modeling, I spent a decent mount of time cleaning the date so as to generate the ideal foramt for following procedures. I made the following changes and created some variables:
+Before EDA and modeling, I spent a decent mount of time cleaning the date so as to generate the ideal foramt for following procedures. I made the following changes and created some variables:<br />
 
-· Parsed the numeric data form Salary column & Generated dependent Variable Avg_salary
-· Conerted hourly wages salries to annual salaries
-· Kept the company name only by removing the rate in the Company Name column
-· Created a new column for the state where the company locate at
-· Created a new column for the age of the company
-· Created mutilple columns for different skills required for different Data anlyst positions from the job description column:
-  1. Python
-  2. SQL
-  3. AWS
-  4. Spark
-  5. Tableau
-  6. Excel
-  7. R Studio
-  8. Power BI
+· Parsed the numeric data form Salary column & Generated dependent Variable Avg_salary<br />
+· Conerted hourly wages salries to annual salaries<br />
+· Kept the company name only by removing the rate in the Company Name column<br />
+· Created a new column for the state where the company locate at<br />
+· Created a new column for the age of the company<br />
+· Created mutilple columns for different skills required for different Data anlyst positions from the job description column: <br />
+
+    1. Python
+    2. SQL
+    3. AWS
+    4. Spark
+    5. Tableau
+    6. Excel
+    7. R Studio
+    8. Power BI<br />
  
- · Created a new column for Job Description Length
- · Created a new column for Senority 
+ · Created a new column for Job Description Length<br />
+ · Created a new column for Senority <br />
  
  
  
