@@ -1,5 +1,6 @@
 # Data Analyst Salary Project 
 
+
 1. Created a tool that estimates data analyst salaries to help data analysts negotiate their income when they get a job
 2. Scraped over 1500 job descriptions from Glassdoor using python and Selenium
 3. Engineered features from the text of each job description to quantify the value companies put on python, excel,
@@ -8,7 +9,9 @@ AWS, and R
 6. Built a client-facing API using flask
 
 
+
 # Resouces and Code
+
 
 Python Version: 3.7.9
 Jupyter Notebook Version: 6.1.4
@@ -16,7 +19,9 @@ Packages: pandas, numpy, sklearn, matplotlib, seaborn, selenium, flask, pickle
 Scraper Article: https://towardsdatascience.com/selenium-tutorial-scraping-glassdoor-com-in-10-minutes-3d0915c6d905
 
 
+
 # Web Scraping
+
 
 Inspired by the scaper article above, I tweaked the github repo to scrape 1500 job posts from GlassDoor.com. With each job post, I got the following features:
 
@@ -33,7 +38,10 @@ Inspired by the scaper article above, I tweaked the github repo to scrape 1500 j
 · Sector
 · Revenue
 
+
+
 # Data Cleaning 
+
 
 Before EDA and modeling, I spent a decent mount of time cleaning the date so as to generate the ideal foramt for following procedures. I made the following changes and created some variables:
 
@@ -54,6 +62,8 @@ Before EDA and modeling, I spent a decent mount of time cleaning the date so as 
  
  · Created a new column for Job Description Length
  · Created a new column for Senority 
+ 
+ 
  
  
 To be continued······
