@@ -56,4 +56,4 @@ Before EDA and modeling, I spent a decent mount of time cleaning the date so as 
  · Created a new column for Senority 
  
  
-
+To be continued······
