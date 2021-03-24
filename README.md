@@ -59,7 +59,7 @@ Before EDA and modeling, I spent a decent mount of time cleaning the date so as 
     5. Tableau
     6. Excel
     7. R Studio
-    8. Power BI<br />
+    8. Power BI
  
  · Created a new column for Job Description Length<br />
  · Created a new column for Senority <br />
@@ -77,11 +77,12 @@ I briefly overlook the distribution of data for different categories by using ba
 
 # Model Building
 
-· I transformed some of the catogorical variables( Company Size, Industry, Revenue) into dummy variables
-· I applied three different models 
+· I transformed some of the catogorical variables( Company Size, Industry, Revenue) into dummy variables<br />
+· I applied three different models <br />
+
     1. Muti-linear Regression
     2. Random Forest Regression
     3. Lasso Regression
 
-· Job Description<br />
+
 
