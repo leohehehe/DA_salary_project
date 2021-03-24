@@ -50,7 +50,7 @@ Before EDA and modeling, I spent a decent mount of time cleaning the date so as 
 · Kept the company name only by removing the rate in the Company Name column<br />
 · Created a new column for the state where the company locate at<br />
 · Created a new column for the age of the company<br />
-· Created mutilple columns for different skills required for different Data anlyst positions from the job description column: <br />
+· Created mutilple columns for different skills required for different Data anlyst positions from the job description column: <br />Cancel Changes
 
     1. Python
     2. SQL
@@ -70,11 +70,10 @@ Before EDA and modeling, I spent a decent mount of time cleaning the date so as 
 
 I briefly overlook the distribution of data for different categories by using barplots, histcharts, heatmap and pivot table, here below are some highlights:
 
-![image](https://user-images.githubusercontent.com/63262273/112365740-5d278000-8cae-11eb-9411-206d3fa1ad79.png)
-
-![image](https://user-images.githubusercontent.com/63262273/112364436-e342c700-8cac-11eb-9dd0-c0218e0e1e8e.png)
 
 ![image](https://user-images.githubusercontent.com/63262273/112365613-3c5f2a80-8cae-11eb-8563-89bb1b7580c0.png)
+![image](https://user-images.githubusercontent.com/63262273/112365740-5d278000-8cae-11eb-9411-206d3fa1ad79.png)
+![image](https://user-images.githubusercontent.com/63262273/112364436-e342c700-8cac-11eb-9dd0-c0218e0e1e8e.png)
 
 
 
