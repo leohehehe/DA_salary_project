@@ -75,5 +75,6 @@ I briefly overlook the distribution of data for different categories by using ba
 ![image](https://user-images.githubusercontent.com/63262273/112365740-5d278000-8cae-11eb-9411-206d3fa1ad79.png)
 ![image](https://user-images.githubusercontent.com/63262273/112364436-e342c700-8cac-11eb-9dd0-c0218e0e1e8e.png)
 
-
+# Modeling
+To be finalized
 
